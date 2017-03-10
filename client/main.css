@@ -1,0 +1,22 @@
+.selecteduser {
+    background-color: green;
+    color: white;
+    padding: 5px;
+    width: 30%;
+}
+
+#error {
+    color: red;
+}
+
+.userlist {
+    cursor: pointer;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+html {
+    font-family: Helvetica, sans-serif;
+}

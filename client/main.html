@@ -1,0 +1,36 @@
+<head>
+    <title>PointsBoard</title>
+</head>
+
+<body>
+    {{> mainlist}} {{> loginButtons}} {{> newuser}}
+</body>
+<template name="mainlist">
+  {{#if currentUser}}
+  <h3> Welcome </h3>
+  {{else}}
+  <h3>Sign in to add new record</h3>
+  {{/if}}
+  <ul>
+    {{#each users}}
+    <li class="userlist {{select}}">{{name}} : {{points}}</li>
+      {{/each}}
+  </ul>
+  <p id="error"></p>
+  {{#if currentUser}} 
+  <input type="button" value="Increment Score by 5" class="inc {{check}}">
+  <input type="button" value="Decrement Score by 5" class="dec {{check}}">
+  <input type="button" value="Delete Entry" class="rm {{check}}">
+  <p>Number of Players: {{count}} </p>
+  {{/if}}
+</template>
+
+<template name="newuser">
+    {{#if currentUser}}
+    <form>
+        <input type="text" placeholder="Name" name="newname">
+        <input type="number" placeholder="Points" name="newpoints">
+        <input type="submit" value="Add New Record">
+    </form>
+    {{/if}}
+</template>
