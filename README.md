@@ -2,10 +2,10 @@
 Leaderboard App Using MeteorJS and MongoDB
 
 >
-##To Run
-##Install Meteor
+## To Run
+## Install Meteor
 > curl https://install.meteor.com | sh
-##Install Dependencies
+## Install Dependencies
 Git clone/ download the application
 
 
@@ -13,5 +13,5 @@ Git clone/ download the application
 
 
 > npm install
-##Running the Application
+## Running the Application
 > meteor run
